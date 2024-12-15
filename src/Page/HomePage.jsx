@@ -1,9 +1,15 @@
+import DynamicPlate from "../Component/DynamicPlate";
+import HeroSection from "../Component/HeroSection";
+import TopCategories from "../Component/TopCategories";
+
  
 
 const HomePage = () => {
     return (
         <div>
-            <h1>home page</h1>
+             <HeroSection></HeroSection>
+            <DynamicPlate></DynamicPlate>
+            <TopCategories></TopCategories>
         </div>
     );
 };
