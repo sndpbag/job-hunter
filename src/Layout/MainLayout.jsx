@@ -1,5 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Component/Navbar";
+import SubscribeSection from "../Component/SubscribeSection";
+import Footer from "../Component/Footer";
+import LastFooter from "../Component/LastFooter";
  
 
  
@@ -14,7 +17,10 @@ const MainLayout = () => {
             <main>
                  <Outlet></Outlet>
             </main>
-            <footer>footer</footer>
+            <SubscribeSection></SubscribeSection>
+            {/* footer */}
+            <Footer></Footer>
+            <LastFooter></LastFooter>
         </div>
     );
 };

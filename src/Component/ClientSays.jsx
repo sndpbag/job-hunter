@@ -5,15 +5,15 @@ const ClientSays = () => {
 
     const developers = [
         {
-          name: 'Chad B. Werner',
+          name: 'sndp B. Werner',
           title: 'Web Designer',
-          description: 'The wise man therefore always circumstances and owing to the claims of duty or the obligations holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.',
+          description: 'snpd bag The wise man therefore always circumstances and owing to the claims of duty or the obligations holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.',
           image: 'path_to_image1',
         },
         {
           name: 'Sandipan Kumar bag',
           title: 'Web Developer',
-          description: 'The wise man therefore always circumstances and owing to the claims of duty or the obligations holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.',
+          description: ' Sandipan kr bag The wise man therefore always circumstances and owing to the claims of duty or the obligations holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.',
           image: 'path_to_image2',
         },
         // Add more developer objects as needed
@@ -29,6 +29,7 @@ const ClientSays = () => {
     const handelDevInfo = (developer) => 
     {
         setSelectDeveloper(developer);
+    
     }
 
 
@@ -64,8 +65,10 @@ const ClientSays = () => {
                     {
                         developers.map((developer,index)=> 
                         (
-                        <img key={index} onClick={()=>handelDevInfo(developer)} className={`w-28 h-28 rounded-full border-[12px] cursor-pointer  ${selectDeveloper === developer ? 'border-b-green-500 border[1px]': ''}`} src={dev1} alt="" />)
+                        <img key={index} onClick={()=>handelDevInfo(developer)} className={`w-28 h-28 rounded-full border-[12px] cursor-pointer  ${selectDeveloper.name === developer.name ? 'border-b-green-300 border[1px]': ''}`} src={dev1} alt="" />)
                         )
+
+                        
                     }
 
                     {/* <img className="w-28 h-28 rounded-full border-[12px] cursor-pointer hover:border[1px] hover:border-b-green-500" src={dev1} alt="" />
